@@ -22,10 +22,14 @@ public class DashboardPage extends PredefinedActions{
 	
 	public int getAllWidgetsOnDashBoard() {
 		return driver.findElements(By.xpath("//div[@name ='widget.name']")).size();
+		 /*int widgetCount = getElement("XPATH","//div[@name ='widget.name']",false );
+		 return widgetCount;*/
+		
 	}
 	
 	public List<String> getAllWidgetText(){
 		return getTextOfAllElements("//div[@class ='widget-header']/span[2]"); 
 	}
+	
 	
 }

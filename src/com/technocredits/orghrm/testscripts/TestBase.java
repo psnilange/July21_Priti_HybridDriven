@@ -15,7 +15,7 @@ public class TestBase {
 		System.out.println("Step: Launch OrangeHRM application.");
 		PredefinedActions.start();
 		LogInPage  logInPage = new  LogInPage();
-		logInPage.enterCredentials("Admin", "zM5QbQ@5Sl");
+		logInPage.enterCredentials("Admin", "DtAwx@7OD8");
 		return logInPage.clickonLoginButton();
 	}
 	
