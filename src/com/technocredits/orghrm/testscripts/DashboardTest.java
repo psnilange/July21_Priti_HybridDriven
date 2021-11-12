@@ -62,7 +62,11 @@ public class DashboardTest extends TestBase {
 		List<String> actualListofWidgets = dashboardPage.getAllWidgetText();
 		System.out.println("Step: verify all 12 Widgets names");
 		softAssert.assertEquals(actualListofWidgets, expectedListofWidgets,"List of actual and expected Widgets does not match");
-		softAssert.assertAll();				
+		softAssert.assertAll();	
+		
+		
+		
+		
 	} 
 	@AfterClass
 	public void closeBroswer() {
