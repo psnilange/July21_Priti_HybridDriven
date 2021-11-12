@@ -68,7 +68,7 @@ public class PredefinedActions {
 		WebElement element =null;
 	
 		if(isWaitRequired)
-			wait.until(ExpectedConditions.invisibilityOfElementLocated(getByReference(locatorType, locatorValue)));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(getByReference(locatorType, locatorValue)));
 		else
 			element = driver.findElement(getByReference(locatorType, locatorValue));
 		switch(locatorType) {

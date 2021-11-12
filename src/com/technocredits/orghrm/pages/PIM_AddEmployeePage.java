@@ -16,7 +16,7 @@ public class PIM_AddEmployeePage extends PredefinedActions  {
 	
 			
 	public void clickonPIM_AddEmployee() {
-		clickOnElement(getElement("XPATH","//span [@combinedmenutitle ='PIM > Add Employee']",false));
+		clickOnElement(getElement("XPATH","//span [@combinedmenutitle ='PIM > Add Employee']",true));
 		//driver.findElement(By.xpath("//span [@combinedmenutitle ='PIM > Add Employee']")).click();
 	}
 		
@@ -50,9 +50,9 @@ public class PIM_AddEmployeePage extends PredefinedActions  {
 	}
 	
 	public String getEmployeeId() {
-		//WebDriverWait wait = new WebDriverWait(driver, 30);
-		//WebElement employeeId = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='employeeId']")));
-		WebElement employeeId =getElement("XPATH","//input[@id='employeeId']",true);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebElement employeeId = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='employeeId']")));
+		//WebElement employeeId =getElement("XPATH","//input[@id='employeeId']",true);
 		return employeeId.getAttribute("value");
 	}
 	
